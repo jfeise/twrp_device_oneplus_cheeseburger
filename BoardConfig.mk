@@ -96,6 +96,10 @@ TW_THEME := portrait_hdpi
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_VENDOR := vendor
 
+# Init properties from bootloader version
+TARGET_INIT_VENDOR_LIB := libinit_cheeseburger
+TARGET_RECOVERY_DEVICE_MODULES := libinit_cheeseburger
+
 #Extra
 BOARD_SUPPRESS_SECURE_ERASE := true
 TW_IGNORE_MISC_WIPE_DATA := true
