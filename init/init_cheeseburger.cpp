@@ -29,13 +29,14 @@
 
 #include <stdlib.h>
 
+#include <android-base/properties.h>
+
 #include "vendor_init.h"
 #include "property_service.h"
-#include "util.h"
 
 void vendor_load_properties()
 {
-	int rf_version = stoi(property_get("ro.boot.rf_version"));
+	int rf_version = stoi(android::base::GetProperty("ro.boot.rf_version", ""));
 
 	switch (rf_version) {
 	/* OnePlus 5 */
