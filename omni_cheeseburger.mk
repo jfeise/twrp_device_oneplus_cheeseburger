@@ -22,10 +22,6 @@ $(call inherit-product, build/target/product/embedded.mk)
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
 
-# Time Zone data for recovery
-PRODUCT_COPY_FILES += \
-    bionic/libc/zoneinfo/tzdata:recovery/root/system/usr/share/zoneinfo/tzdata
-
 # Set by init module based on ro.boot.rf_version argument from bootloader
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += ro.product.device ro.product.model
 

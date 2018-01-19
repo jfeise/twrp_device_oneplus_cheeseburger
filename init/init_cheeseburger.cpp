@@ -31,8 +31,10 @@
 
 #include <android-base/properties.h>
 
-#include "vendor_init.h"
 #include "property_service.h"
+
+namespace android {
+namespace init {
 
 void vendor_load_properties()
 {
@@ -57,4 +59,7 @@ void vendor_load_properties()
 		property_set("ro.product.device", "OnePlus5");
 		property_set("ro.display.series", "OnePlus 5");
 	}
+}
+
+}
 }
