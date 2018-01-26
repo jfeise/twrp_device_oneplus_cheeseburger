@@ -37,9 +37,6 @@ on early-init
     write /sys/block/sde/queue/nr_requests 256
 
 on init
-    # Enable dt2w
-    write /proc/touchpanel/double_tap_enable 1
-
     # Enable charging LED
     write /sys/class/leds/red/trigger "battery-charging"
     write /sys/class/leds/green/trigger "battery-full"
@@ -168,6 +165,9 @@ on property:sys.boot_completed=1
     write /sys/devices/soc/soc:qcom,bcl/hotplug_mask 0
     write /sys/devices/soc/soc:qcom,bcl/hotplug_soc_mask 0
     write /sys/devices/soc/soc:qcom,bcl/mode "enable"
+
+    # Enable dt2w
+    write /proc/touchpanel/double_tap_enable 1
 
 # Separate copy needed to use /sbin/linker64 instead of /system/bin/linker64
 service sbinqseecomd /sbin/qseecomd
