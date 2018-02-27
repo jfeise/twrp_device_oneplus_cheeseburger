@@ -167,7 +167,7 @@ on property:sys.boot_completed=1
     write /sys/devices/soc/soc:qcom,bcl/mode "enable"
 
     # Enable dt2w
-    write /proc/touchpanel/double_tap_enable 1
+    #write /proc/touchpanel/double_tap_enable 1
 
 # Separate copy needed to use /sbin/linker64 instead of /system/bin/linker64
 service sbinqseecomd /sbin/qseecomd
