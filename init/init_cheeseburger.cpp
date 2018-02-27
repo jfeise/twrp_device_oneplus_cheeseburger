@@ -44,19 +44,19 @@ void vendor_load_properties()
 	/* OnePlus 5 */
 	case 53:
 		property_set("ro.product.model", "ONEPLUS A5000");
-		property_set("ro.product.device", "OnePlus5");
+		property_set("ro.product.device", "cheeseburger");
 		property_set("ro.display.series", "OnePlus 5");
 		break;
 	/* OnePlus 5T */
 	case 21:
 		property_set("ro.product.model", "ONEPLUS A5010");
-		property_set("ro.product.device", "OnePlus5T");
+		property_set("ro.product.device", "dumpling");
 		property_set("ro.display.series", "OnePlus 5T");
 		break;
 	/* default to OnePlus 5 */
 	default:
 		property_set("ro.product.model", "ONEPLUS A5000");
-		property_set("ro.product.device", "OnePlus5");
+		property_set("ro.product.device", "cheeseburger");
 		property_set("ro.display.series", "OnePlus 5");
 	}
 }
