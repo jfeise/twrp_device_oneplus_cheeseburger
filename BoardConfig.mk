@@ -96,7 +96,6 @@ TW_EXTRA_LANGUAGES := true
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_NTFS_3G := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
-TW_MAX_BRIGHTNESS := 255
 TW_THEME := portrait_hdpi
 
 # Init properties from bootloader version
@@ -106,3 +105,4 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_cheeseburger
 #Extra
 BOARD_SUPPRESS_SECURE_ERASE := true
 TW_IGNORE_MISC_WIPE_DATA := true
+TW_DEFAULT_BRIGHTNESS := "26"
