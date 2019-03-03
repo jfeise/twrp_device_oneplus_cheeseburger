@@ -91,7 +91,7 @@ on property:sys.listeners.registered=true
     start gatekeeper-1-0
     start servicemanager
 
-on property:sys.boot_completed=1
+on property:crypto.ready=1
     # Tweak IO performance after boot complete
     write /sys/block/dm-0/queue/scheduler "zen"
     write /sys/block/dm-1/queue/scheduler "zen"
